@@ -224,7 +224,6 @@ header .intro-content {
 header .brand-name {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
-  visibility: hidden;
   font-weight: 300;
   margin-top: 15px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans serif;
@@ -264,9 +263,6 @@ header .scroll-down .btn:hover {
   border-color: rgba(255, 255, 255, 0.5);
   outline: none;
 }
-header .header-line {
-  visibility: hidden;
-}
 @media (min-width: 768px) {
   header {
     height: 100%;
@@ -298,8 +294,42 @@ header .header-line {
     max-width: 300px;
     max-height: 300px;
   }
-  header .header-line {
-    visibility: visible;
+}
+@media (max-width: 768px) {
+  header {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    background-attachment: scroll;
+  }
+  header .intro-content {
+    color: white;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  header .brand-name {
+    font-size: 48px;
+    line-height: 55px;
+  }
+}
+@media (max-width: 320px) {
+  header #header-line {
+    visibility: hidden;
+  }
+  header .brand-name {
+    visibility: hidden;
+    width: 300px;
+    font-size: 1px;
+  }
+  header .brand-name-subtext {
+    font-size: 30px;
+    line-height: 40px;
   }
 }
 @media (min-width: 1025px) {

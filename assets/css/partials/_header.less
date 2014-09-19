@@ -16,7 +16,6 @@ header {
 	}
 	.brand-name {
 		.heading-font;
-		visibility: hidden;
 		font-weight: 300;
 		margin-top: 15px;
 		font-family: "Helvetica Neue", Helvetica, Arial, sans serif;
@@ -54,10 +53,6 @@ header {
 			}
 		}
 	}
-
-	.header-line {
-		visibility: hidden;
-	}
 }
 
 @media(min-width:768px) {
@@ -90,10 +85,54 @@ header {
 			max-height: 300px;
 		}
 
-		.header-line {
-			visibility: visible;
-		}		
+	
   	}
+}
+
+@media(max-width: 768px) {
+
+	header {
+		height: 100%;
+		width: 100%;
+		padding: 0;
+		background-attachment: scroll;
+		
+		.intro-content {
+				color: white;
+				text-align: center;
+				margin: auto;
+				position: absolute;
+				top: 50%; left: 50%;
+				-webkit-transform: translate(-50%,-50%);
+				-ms-transform: translate(-50%,-50%);
+				transform: translate(-50%,-50%);
+		}
+
+		.brand-name {
+			font-size: 48px;
+			line-height: 55px;
+		}
+	}
+
+}
+
+@media(max-width: 320px) {
+
+	header {
+		#header-line {
+			visibility: hidden;
+		}
+
+		.brand-name {
+			visibility: hidden;
+			width: 300px;
+			font-size: 1px;
+		}
+		.brand-name-subtext {
+			font-size: 30px;
+			line-height: 40px;
+		}
+	}
 }
 
 @media(min-width:1025px) {
