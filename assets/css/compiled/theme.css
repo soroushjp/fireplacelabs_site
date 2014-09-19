@@ -116,7 +116,7 @@ body.vintage .testimonials .testimonials-carousel .owl-controls .owl-next {
 }
 .btn-outline-light:hover,
 .btn-outline-light:focus {
-  color: #ef4035;
+  color: #ffc153;
   background: white;
   outline: none;
 }
@@ -131,8 +131,8 @@ body.vintage .testimonials .testimonials-carousel .owl-controls .owl-next {
 .btn-outline-dark:hover,
 .btn-outline-dark:focus {
   color: white;
-  background: #ef4035;
-  border-color: #ef4035;
+  background: #ffc153;
+  border-color: #ffc153;
   outline: none;
 }
 .btn {
@@ -159,7 +159,7 @@ body.vintage .testimonials .testimonials-carousel .owl-controls .owl-next {
   text-transform: none;
 }
 .btn-full-width:hover {
-  background-color: #ef4035;
+  background-color: #ffc153;
   color: white;
 }
 .btn-full-width:focus {
@@ -223,7 +223,7 @@ header .brand-name {
   font-size: 55px;
   line-height: 55px;
   text-transform: uppercase;
-  font-weight: 900;
+  font-weight: 00;
   margin-top: 15px;
 }
 header .brand-name-subtext {
@@ -322,7 +322,7 @@ body {
   font-weight: 300;
 }
 a {
-  color: #ef4035;
+  color: #ffc153;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
@@ -339,7 +339,6 @@ p {
 p.lead {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
-  text-transform: uppercase;
   font-size: 24px;
 }
 h1,
@@ -350,7 +349,6 @@ h5,
 h6 {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
-  text-transform: uppercase;
 }
 @media (min-width: 481px) {
   h1 {
@@ -374,7 +372,7 @@ hr.right {
   margin: 15px 0 15px auto;
 }
 hr.colored {
-  border-color: #ef4035;
+  border-color: #ffc153;
 }
 @media (min-width: 768px) {
   hr {
@@ -389,7 +387,7 @@ hr.colored {
   }
 }
 .text-primary {
-  color: #ef4035;
+  color: #ffc153;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
@@ -397,12 +395,12 @@ hr.colored {
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
-  color: #ef4035;
+  color: #ffc153;
   background-color: white;
   border-radius: 0;
 }
 .navbar-default {
-  background-color: #ef4035;
+  background-color: #ffc153;
 }
 .navbar-default .navbar-toggle .icon-bar {
   background-color: white;
@@ -512,7 +510,7 @@ aside.cta-quote span.quote {
     padding: 300px 0;
   }
   aside.cta-quote span.quote {
-    font-size: 40px;
+    font-size: 30px;
     line-height: 42px;
   }
 }
@@ -545,7 +543,6 @@ aside.cta-quote span.quote {
 .testimonials .testimonials-carousel .item .testimonial-info .testimonial-author .name {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
-  text-transform: uppercase;
 }
 .testimonials .testimonials-carousel .item .testimonial-info .testimonial-author hr.colored {
   margin: 3px auto;
@@ -573,7 +570,7 @@ aside.cta-quote span.quote {
   margin: auto 0 !important;
   top: 0;
   bottom: 0;
-  background-color: #ef4035 !important;
+  background-color: #ffc153 !important;
   color: white !important;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -602,7 +599,10 @@ aside.cta-quote span.quote {
   padding: 30px;
 }
 .about-carousel .item {
-  padding: 15px;
+  margin: 15px;
+  width: 350px;
+  height: 350px;
+  background-color: #333;
 }
 .about-carousel .item .caption {
   padding: 15px;
@@ -636,6 +636,13 @@ aside.cta-quote span.quote {
 .about-carousel .item .caption ul.social li a:focus {
   color: white;
 }
+.about-carousel .item p.team-detail {
+  margin: 10px 40px;
+  font-size: 14px;
+}
+.about-carousel .item p.team-detail .team-detail-title {
+  font-weight: 500;
+}
 .about-carousel .owl-controls {
   margin-top: 0;
 }
@@ -651,7 +658,7 @@ aside.cta-quote span.quote {
   margin: auto 0 !important;
   top: 0;
   bottom: 0;
-  background-color: #ef4035 !important;
+  background-color: #ffc153 !important;
   color: white !important;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -728,7 +735,6 @@ aside.cta-quote span.quote {
   margin-bottom: 5px;
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
-  text-transform: uppercase;
 }
 .portfolio-carousel .item .project-details .project-description {
   display: block;
@@ -750,7 +756,7 @@ aside.cta-quote span.quote {
   margin: auto 0 !important;
   top: 0;
   bottom: 0;
-  background-color: #ef4035 !important;
+  background-color: #ffc153 !important;
   color: white !important;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -970,7 +976,7 @@ aside.cta-quote span.quote {
   opacity: 1;
 }
 .floating-label-form-group-with-focus label {
-  color: #ef4035;
+  color: #ffc153;
 }
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #e1e1e1;
