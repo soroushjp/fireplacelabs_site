@@ -2,6 +2,10 @@ html,
 body {
   height: 100%;
 }
+.fireplace-emphasis {
+  color: #FF9500;
+  font-weight: 500;
+}
 .img-centered {
   margin: 0 auto;
 }
@@ -220,15 +224,14 @@ header .intro-content {
 header .brand-name {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
-  font-size: 55px;
-  line-height: 55px;
-  text-transform: uppercase;
-  font-weight: 00;
+  font-weight: 300;
   margin-top: 15px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans serif;
+  text-shadow: 1px 2px 4px #333;
 }
 header .brand-name-subtext {
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 30px;
+  line-height: 35px;
   font-weight: 300;
 }
 header img {
@@ -270,7 +273,6 @@ header .scroll-down .btn:hover {
   header .intro-content {
     color: white;
     text-align: center;
-    width: 50%;
     margin: auto;
     position: absolute;
     top: 50%;
@@ -280,6 +282,7 @@ header .scroll-down .btn:hover {
     transform: translate(-50%, -50%);
   }
   header .brand-name {
+    visibility: visible;
     font-size: 80px;
     line-height: 80px;
   }
@@ -290,6 +293,43 @@ header .scroll-down .btn:hover {
   header img {
     max-width: 300px;
     max-height: 300px;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    background-attachment: scroll;
+  }
+  header .intro-content {
+    color: white;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  header .brand-name {
+    font-size: 48px;
+    line-height: 55px;
+  }
+}
+@media (max-width: 320px) {
+  header #header-line {
+    visibility: hidden;
+  }
+  header .brand-name {
+    visibility: hidden;
+    width: 300px;
+    font-size: 1px;
+  }
+  header .brand-name-subtext {
+    font-size: 30px;
+    line-height: 40px;
   }
 }
 @media (min-width: 1025px) {
@@ -423,7 +463,8 @@ hr.colored {
 }
 .navbar-default .navbar-brand,
 .navbar-inverse .navbar-brand {
-  padding: 0 15px;
+  font-size: 30px;
+  padding: 15px 15px 0;
   color: white;
   opacity: 1;
   text-decoration: none;
@@ -470,6 +511,9 @@ hr.colored {
   .navbar-inverse.navbar-expanded {
     background: transparent;
     border: none;
+  }
+  .navbar-brand {
+    font-size: 40px;
   }
 }
 .navbar a:focus {
@@ -702,6 +746,12 @@ aside.cta-quote span.quote {
 @media (min-width: 992px) {
   .services .media {
     margin-bottom: 0;
+  }
+}
+@media (max-width: 992px) {
+  .services .media {
+    margin: 0 auto;
+    width: 290px;
   }
 }
 .portfolio-carousel {

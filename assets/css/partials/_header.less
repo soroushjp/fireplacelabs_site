@@ -16,15 +16,14 @@ header {
 	}
 	.brand-name {
 		.heading-font;
-		font-size: 55px;
-		line-height: 55px;
-		text-transform: uppercase;
-		font-weight: 00;
+		font-weight: 300;
 		margin-top: 15px;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans serif;
+		text-shadow: 1px 2px 4px #333;
 	}
 	.brand-name-subtext {
-		font-size: 20px;
-		line-height: 20px;
+		font-size: 30px;
+		line-height: 35px;
 		font-weight: 300;
 	}
 	img {
@@ -65,7 +64,6 @@ header {
 		.intro-content {
 			color: white;
 			text-align: center;
-			width: 50%;
 			margin: auto;
 			position: absolute;
 			top: 50%; left: 50%;
@@ -74,6 +72,7 @@ header {
 			transform: translate(-50%,-50%);
 		}
 		.brand-name {
+			visibility: visible;
 			font-size: 80px;
 			line-height: 80px;
 		}
@@ -84,8 +83,56 @@ header {
 		img {
 			max-width: 300px;
 			max-height: 300px;
-		}		
+		}
+
+	
   	}
+}
+
+@media(max-width: 768px) {
+
+	header {
+		height: 100%;
+		width: 100%;
+		padding: 0;
+		background-attachment: scroll;
+		
+		.intro-content {
+				color: white;
+				text-align: center;
+				margin: auto;
+				position: absolute;
+				top: 50%; left: 50%;
+				-webkit-transform: translate(-50%,-50%);
+				-ms-transform: translate(-50%,-50%);
+				transform: translate(-50%,-50%);
+		}
+
+		.brand-name {
+			font-size: 48px;
+			line-height: 55px;
+		}
+	}
+
+}
+
+@media(max-width: 320px) {
+
+	header {
+		#header-line {
+			visibility: hidden;
+		}
+
+		.brand-name {
+			visibility: hidden;
+			width: 300px;
+			font-size: 1px;
+		}
+		.brand-name-subtext {
+			font-size: 30px;
+			line-height: 40px;
+		}
+	}
 }
 
 @media(min-width:1025px) {
