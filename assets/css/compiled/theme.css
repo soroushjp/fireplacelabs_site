@@ -745,9 +745,13 @@ aside.cta-quote span.quote {
 }
 @media (min-width: 992px) {
   .services .media {
-    margin: 0 auto;
-    width: 320px;
     margin-bottom: 0;
+  }
+}
+@media (max-width: 992px) {
+  .services .media {
+    margin: 0 auto;
+    width: 290px;
   }
 }
 .portfolio-carousel {
