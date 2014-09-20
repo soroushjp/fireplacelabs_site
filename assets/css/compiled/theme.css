@@ -13,7 +13,7 @@ body {
   margin-top: 30px;
 }
 section {
-  padding: 100px 0;
+  padding: 60px 0;
 }
 section.bg-gray {
   background-color: #f5f5f5;
@@ -326,6 +326,7 @@ header .scroll-down .btn:hover {
     visibility: hidden;
     width: 300px;
     font-size: 1px;
+    height: 0px;
   }
   header .brand-name-subtext {
     font-size: 30px;
@@ -643,9 +644,11 @@ aside.cta-quote span.quote {
   padding: 30px;
 }
 .about-carousel .item {
-  margin: 15px;
-  width: 350px;
+  padding: 15px;
+}
+.about-carousel .item .img-placeholder {
   height: 350px;
+  width: 350px;
   background-color: #333;
 }
 .about-carousel .item .caption {
